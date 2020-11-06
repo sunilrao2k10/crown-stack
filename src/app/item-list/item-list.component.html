@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="breadcum">Equipment Catalog</div>
+    <div class="box-wrap">
+    <div class="box" *ngFor='let categorie of categories.categories'>        
+         <img src="assets/{{categorie.image}}" alt=""> 
+         <div class="detail" (click)='showDetail(categorie.name)'>
+            <h4>{{categorie.name}}</h4> 
+         </div>
+     </div>
+    </div>
+</div>

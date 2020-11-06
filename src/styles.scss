@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}    
+body{
+    font-family: 'Verdana, Geneva, sans-serif';
+}
+img{
+    max-width: 100%;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+.container{
+    margin: 0 auto;
+    width: 1110px
+}       
+header{
+    background: #000;
+    color: #fff;
+    a{
+        color: #fff;
+    }
+    .header{
+        display: flex;
+        align-items: center;
+        justify-items: center;   
+        height: 50px;                
+    }
+    nav{                
+        .location{
+            position: relative;   
+            margin-left: 200px;         
+        &:hover{
+            > ul{
+                display: block;
+            }
+        }         ;
+        ul {
+            display: none;
+            position: absolute;            
+            left: 0;
+            box-shadow: 0 5px 5px #ccc;
+            background: #fff;
+            color: #000;
+            list-style-type: none;
+            li{
+                position: relative;
+                padding: 10px 10px;
+                border: 1px solid #ececec;
+                border-bottom: none;
+                cursor: pointer;
+                font-size: 12px;
+                min-width: 120px;
+                ul{
+                    position: absolute;
+                    left: 140px;
+                    top: 0;
+                    min-width: 140px;
+                    display: none;
+                    z-index: 1;
+                }
+                &:hover{
+                    ul{
+                        display: block;;
+                    }
+                }
+            }
+        } 
+        }               
+    }
+}
+.breadcum{
+    margin-top: 60px;
+}
+.box-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+    .box{
+        box-shadow: 0 0px 5px #ccc;
+        margin: 20px;
+        width: 20%;
+    }
+    .detail{
+        background:#0977b7;
+        color: #fff;
+        padding: 5px 0;
+        text-align: center;
+        cursor: pointer;        
+    }
+}
+.dashboard{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    flex-flow: column;
+}

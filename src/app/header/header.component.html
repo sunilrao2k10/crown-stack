@@ -1,0 +1,22 @@
+<header>
+    <div class="container header">
+        <div>
+            <h2> <a routerLink="/dashboard">Rental Management System</a> </h2>
+        </div>
+        <nav>
+            <div class="location">
+                Select Lcoation
+                <ul>
+                    <li *ngFor='let location of locations'>
+                       {{location.name}}
+                    <ul>
+                        <li *ngFor='let branche of location.branches' (click)='selectBranch(location.dealers_id, branche.branch_id)'>
+                           {{branche.name}}
+                        </li>
+                    </ul>
+                    </li>
+                </ul>
+            </div>           
+        </nav>
+    </div>    
+</header>

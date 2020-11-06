@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="breadcum"> <a href="javascript:void(0)" (click)="back()">Equipment Catalog </a> / {{params.categories}}</div>
+    <div class="box-wrap">
+    <div class="box" *ngFor='let categorie of categories.subcategories'>        
+         <img src="assets/subcategory/{{categorie.image}}" alt=""> 
+         <div class="detail">
+            <h4>{{categorie.name}}</h4> 
+         </div>  
+     </div>
+    </div>
+</div>
